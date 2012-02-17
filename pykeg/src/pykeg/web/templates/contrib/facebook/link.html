@@ -1,6 +1,7 @@
 {% extends "page-twocol.html" %}
 {% load kegweblib %}
-{% load facebook_tags %}
+{% load friendly_loader %}
+{% friendly_load facebook_tags %}
 {% block kb-extrajs %}
    {% facebook_js %}
 {% endblock %}

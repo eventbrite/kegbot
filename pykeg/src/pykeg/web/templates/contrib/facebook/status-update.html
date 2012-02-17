@@ -1,6 +1,7 @@
 {% extends "page-twocol.html" %}
 {% load kegweblib %}
-{% if USE_FACEBOOK %}{% load facebook_tags %}{% endif %}
+{% load friendly_loader %}
+{% if USE_FACEBOOK %}{% friendly_load facebook_tags %}{% endif %}
 
 {% block title %}your account: {{user.username}}{% endblock %}
 

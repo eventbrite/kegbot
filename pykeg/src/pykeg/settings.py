@@ -30,7 +30,6 @@ INSTALLED_APPS = (
     'registration',
     'sentry',
     'socialregistration',
-    'friendlytagloader',
 
     # Celery and dependencies.
     'djcelery',

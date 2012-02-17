@@ -1,11 +1,12 @@
 {% extends "page-twocol.html" %}
 {% load kegweblib %}
+{% load friendly_loader %}
 
 {% block title %}login{% endblock %}
 
 {% block kb-extrajs %}
    {% if USE_FACEBOOK %}
-   {% load facebook_tags %}
+   {% friendly_load facebook_tags %}
    {% facebook_js %}
    {% endif %}
 {% endblock %}
